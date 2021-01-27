@@ -1,9 +1,5 @@
 function LoadTheArchive(TotalFeed) {
-    var PostTitles = new Array();
-    var PostURLs = new Array();
-    var PostYears = new Array();
-    var PostMonths = new Array();
-    var PostDays = new Array();
+    var PostTitles,PostURLs,PostYears,PostMonths,PostDays = new Array()
     if ("entry" in TotalFeed.feed) {
         var PostEntries = TotalFeed.feed.entry.length;
         for (var PostNum = 0; PostNum < PostEntries; PostNum++) {
